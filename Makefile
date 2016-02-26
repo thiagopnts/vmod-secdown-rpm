@@ -1,9 +1,8 @@
 rpm:
 	mkdir -p dist/{BUILD,RPMS,SPECS,SOURCES,SRPMS,install}
 	cp nytd-libvmod-secdown-1.1.spec dist/SPECS
-	wget https://github.com/varnish/Varnish-Cache/archive/varnish-3.0.3.tar.gz
 	wget https://github.com/footplus/libvmod-secdown/archive/master.tar.gz -O libvmod-secdown.tar.gz
-	mv varnish-3.0.3.tar.gz dist/BUILD
+	cp varnish-3.0.3.tar.gz dist/BUILD
 	mv libvmod-secdown.tar.gz dist/SOURCES
 	tar -zxf dist/BUILD/varnish-3.0.3.tar.gz -C dist/BUILD
 	cd dist/SPECS
