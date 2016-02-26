@@ -6,7 +6,7 @@ rpm:
 	mv libvmod-secdown.tar.gz dist/SOURCES
 	tar -zxf dist/BUILD/varnish-3.0.3.tar.gz -C dist/BUILD
 	cd dist/SPECS
-	rpmbuild -ba \
+	QA_SKIP_BUILD_ROOT=1 rpmbuild -ba \
                     --define "_topdir $(PWD)/dist" \
                     --define "buildroot $(PWD)/dist/install" \
                     --clean \
