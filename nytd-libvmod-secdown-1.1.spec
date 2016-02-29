@@ -1,5 +1,5 @@
 Summary: Varnish Vmod for url hash signing
-Name: secdown
+Name: vmod-secdown
 Version: 1.1
 Release: 1
 Packager: NYTimes
